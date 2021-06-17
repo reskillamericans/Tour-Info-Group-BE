@@ -1,5 +1,5 @@
 {
-  "name": "museum-app-nodejs-be",
+  "name": "tour-info-app-nodejs-be",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reskillamericans/MuseumExperience-Group1-NodeJS-BE.git.git"
+    "url": "git+https://github.com/reskillamericans/Tour-Info-Group-BE.git.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reskillamericans/MuseumExperience-Group1-NodeJS-BE.git/issues"
+    "url": "https://github.com/reskillamericans/Tour-Info-Group-BE.git/issues"
   },
-  "homepage": "https://github.com/reskillamericans/MuseumExperience-Group1-NodeJS-BE.git#readme",
+  "homepage": "https://github.com/reskillamericans/Tour-Info-Group-BE.git#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
