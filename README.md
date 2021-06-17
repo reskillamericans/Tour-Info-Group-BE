@@ -10,7 +10,7 @@ Welcome!
 ### Staying Updated
 When working with many people on the same codebase, sometimes others make changes that affect your work. While great care has been taken to create a modular team workflow to keep this to a minimum, merge conflicts are inevitable. It would _suck_ to finish working on a task or feature, only to find that the codebase has evolved and you need to rework everything to conform to the new changes. This is managed in two ways.       
 __*First*__, make sure your understand the folder structure and stick to it.      
-__*Second*__, each team member needs to make sure that at every given time, their working directory is up-to-date with the latest changes from the upstream *development* branch. This is achieved with a two-fold process.       
+__*Second*__, each team member needs to make sure that at every given time, their working directory is up-to-date with the latest changes from the upstream *develop-node* branch. This is achieved with a two-fold process.       
 #### Pulling Upstream
 After setting up your fork on github and cloning it locally on your system, you'll need to run a command just once to create a connection between your local repository and the remote upstream repository. Note that there's automatically a remote 'origin' repository set up when you clone. This points to your fork. Now you need to set up 'upstream' which will point to the central upstream repo.
 
@@ -22,21 +22,21 @@ Now you're all set up.
 __*The following steps must be run periodically to keep your work up-to-date! You can run these commands as often as possible. You want to fetch any new changes as soon as possible. Each time you want to begin working, or take a break from your work, run these first.*__     
 Be sure to  commit all local changes first. 
 
-1. Switch to the development branch        
-    <pre>git checkout development</pre>     
+1. Switch to the develop-node branch        
+    <pre>git checkout develop-node</pre>     
 2. Get all remote upstream changes into your local computer.        
     <pre>git fetch upstream</pre>     
-3. Merge changes fetched with your local development branch. ('development' must be the currently checked-out branch)       
-    <pre>git merge upstream/development</pre>    
+3. Merge changes fetched with your local develop-node branch. ('develop-node' must be the currently checked-out branch)       
+    <pre>git merge upstream/develop-node</pre>    
 4. Push the newly merged changes to your fork's remote (online) repo. This is configured as 'origin' by default.    
-    <pre>git push origin development</pre>      
+    <pre>git push origin develop-node</pre>      
 
-If you've created a new branch to work on rather than working directly on `development`, then run the next steps.
+If you've created a new branch to work on rather than working directly on `develop-node`, then run the next steps.
 
 5. Switch to your feature branch.        
     <pre>git checkout your-feature-branch</pre>        
-6. Merge the changes on the newly merged development branch, into your feature branch.        
-    <pre>git merge development</pre>
+6. Merge the changes on the newly merged develop-node branch, into your feature branch.        
+    <pre>git merge develop-node</pre>
     *You may encounter merge conflicts here.
     [Resolve them](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line),
     then come back and complete the merge. If you merge often enough, any conflicts would be trivial and very few.*
