@@ -9,16 +9,13 @@ const locationSchema = new mongoose.Schema({
 		required: true
 	},
 	comments: {
-		type: String,
-		enum: ["Poor", "Fair", "Good", "Very Good", "Excellent"],
-		default: "Good"
+		type: String
 	},
 	rating: {
-		type: Number,
+		type: String,
 		required: true,
-		min: 1,
-		enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-		default: 1
+		enum: ["Poor", "Fair", "Good", "Very Good", "Excellent"],
+		default: "Good"
 	},
 	avgRating: {
 		type: Number,
