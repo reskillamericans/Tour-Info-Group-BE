@@ -33,7 +33,9 @@ exports.fetchSingleLocation = (req, res) => {
 // update single location
 exports.updateSingleLocation = (req, res) => {
 	Location.findByIdAndUpdate(req.params.id, {
-		comment: req.body.comment,
+		location: req.body.location,
+		title: req.body.title,
+		comments: req.body.comments,
 		rating: req.body.rating
 	}, (err, location) => {
 		if (err) {

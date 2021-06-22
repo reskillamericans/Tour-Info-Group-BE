@@ -1,27 +1,33 @@
-const mongoose = require('mongoos');
+const mongoose = require('mongoose');
 /*
-location should have a title, array of comments and array of ratings, and an average rating (Number)
+location can be a city or a country,
+should have a title, 
+array of comments, 
+array of ratings,
+and an average rating (Number)
 */
 
 const locationSchema = new mongoose.Schema({
+	location: {
+		type: String,
+		required: true
+	},
 	title: {
 		type: String,
 		required: true
 	},
 	comments: {
-		type: String
+		type: [String]
 	},
 	rating: {
-		type: String,
-		required: true,
-		enum: ["Poor", "Fair", "Good", "Very Good", "Excellent"],
-		default: "Good"
+		type: [Number],
+		required: true
 	},
 	avgRating: {
 		type: Number,
+		required: true,
 		min: 1,
-		enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-		default: 1
+		max: 5
 	}
 });
 
