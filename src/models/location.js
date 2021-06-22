@@ -16,19 +16,10 @@ const locationSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	comments: {
-		type: [String]
-	},
-	rating: {
-		type: [Number],
-		required: true
-	},
-	avgRating: {
-		type: Number,
-		required: true,
-		min: 1,
-		max: 5
-	}
+	reviews: [{
+		type: Schema.Types.ObjectId,
+		ref: "Review"
+	}]
 });
 
 const Location = mongoose.model('Location', locationSchema);
