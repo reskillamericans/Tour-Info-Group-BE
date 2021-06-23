@@ -36,7 +36,7 @@ exports.updateSingleLocation = (req, res) => {
 		location: req.body.location,
 		title: req.body.title,
 		comments: req.body.comments,
-		rating: req.body.rating
+		reviews: req.body.reviews
 	}, (err, location) => {
 		if (err) {
 			return res.status(500).json({message: err});
