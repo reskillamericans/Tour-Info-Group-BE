@@ -22,10 +22,10 @@ exports.fetchSingleLocation = (req, res) => {
 	Location.findOne({_id: req.params.id}, (err, location) => {
 		if (err) {
 			return res.status(500).json({message: err});
-		} else if (!event) {
+		} else if (!location) {
 			return res.status(404).json({message: "location not found"});
 		} else {
-			return res.status(200).json({event});
+			return res.status(200).json({location});
 		}
 	})
 }
