@@ -18,7 +18,7 @@
         @endforeach
         {{ $search_tours_location->appends(request()->except('page'))->links() }}
     @else
-	No Tours. <br><br>
+	    No Tours. <br><br>
     @endif
     </body>
 </html>
