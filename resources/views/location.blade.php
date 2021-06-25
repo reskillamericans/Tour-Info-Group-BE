@@ -16,7 +16,7 @@
 	    Location: {{ $tour_location->location }} <br> <br>
         @endforeach
     @else
-	No Tours. <br><br>
+	    No Tours. <br><br>
     @endif
     </body>
 </html>
