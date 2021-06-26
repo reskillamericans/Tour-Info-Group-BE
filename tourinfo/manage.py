@@ -3,6 +3,10 @@
 import os
 import sys
 
+#admin logins:
+#Username: AdminUsername
+#Email: tourapp@reskillamericans.com
+#Password: AdminPassword
 
 def main():
     """Run administrative tasks."""
