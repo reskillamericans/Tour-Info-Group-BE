@@ -13,9 +13,9 @@
     <b>View Tour</b> <br>
     @if (count($view_tour) > 0)
         @foreach ($view_tour as $tour_details)
-	    Title: {{ $tour_details->title }} <br>
-	    Description: {{ $tour_details->description }} <br>
-	    Location: {{ $tour_details->location }} <br> <br>
+	        Title: {{ $tour_details->title }} <br>
+	        Description: {{ $tour_details->description }} <br>
+	        Location: {{ $tour_details->location }} <br> <br>
         @endforeach
     @else
 	    Tour doesn't exist. <br><br>
