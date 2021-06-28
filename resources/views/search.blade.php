@@ -13,9 +13,9 @@
     <b>View {{ $search_location }} Tours</b> <br>
     @if (count($search_tours_location) > 0)
         @foreach ($search_tours_location as $search_tour_location)
-	    Title: <a href="/tour/{{ $search_tour_location->id }}">{{ $search_tour_location->title }}</a> <br>
-	    Description: {{ $search_tour_location->description }} <br>
-	    Location: {{ $search_tour_location->location }} <br> <br>
+	        Title: <a href="/tour/{{ $search_tour_location->id }}">{{ $search_tour_location->title }}</a> <br>
+	        Description: {{ $search_tour_location->description }} <br>
+	        Location: {{ $search_tour_location->location }} <br> <br>
         @endforeach
         {{ $search_tours_location->appends(request()->except('page'))->links('pagination::bootstrap-4') }}
     @else
