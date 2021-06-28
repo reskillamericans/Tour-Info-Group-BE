@@ -13,9 +13,9 @@
     <b>View {{ $location }} Tours</b> <br>
     @if (count($view_tours_location) > 0)
         @foreach ($view_tours_location as $tour_location)
-	    Title: <a href="/tour/{{ $tour_location->id }}">{{ $tour_location->title }}</a> <br>
-	    Description: {{ $tour_location->description }} <br>
-	    Location: {{ $tour_location->location }} <br> <br>
+	        Title: <a href="/tour/{{ $tour_location->id }}">{{ $tour_location->title }}</a> <br>
+	        Description: {{ $tour_location->description }} <br>
+	        Location: {{ $tour_location->location }} <br> <br>
         @endforeach
     @else
 	    No Tours. <br><br>
