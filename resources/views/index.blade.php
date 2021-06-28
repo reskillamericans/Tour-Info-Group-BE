@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
         <title>Tours</title>
     </head>
@@ -10,7 +11,7 @@
     <b>View All Tours</b> <br>
     @if (count($tours) > 0)
         @foreach ($tours as $tour)
-	    Title: {{ $tour->title }} <br>
+	    Title: <a href="/tour/{{ $tour->id }}">{{ $tour->title }}</a> <br>
 	    Description: {{ $tour->description }} <br>
 	    Location: {{ $tour->location }} <br> <br>
         @endforeach

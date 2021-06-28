@@ -39,4 +39,13 @@ class TourController extends Controller
 
 	    return view('search', ['search_tours_location' => $search_tours_location, 'search_title' => $search_title, 'search_location' => $search_location]);
     }
+
+    public function view_tour(Request $request)
+    {
+	    $id = $request->id;
+
+	    $view_tour= tour::where('id', '=', $id)->get();
+
+	    return view('tour', ['view_tour' => $view_tour, 'id' => $id]);
+    }
 }
