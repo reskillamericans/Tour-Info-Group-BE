@@ -3,6 +3,7 @@
 import os
 import sys
 
+#superuser logins made by Eleanor Davies
 #admin logins:
 #Username: AdminUsername
 #Email: tourapp@reskillamericans.com
