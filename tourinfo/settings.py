@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #application created by Natiea Cannon
     'tourapp',
+    'bookings'
 ]
 
 MIDDLEWARE = [
