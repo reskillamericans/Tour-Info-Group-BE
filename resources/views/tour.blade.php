@@ -10,15 +10,15 @@
     </head>
     <body>
     <a href="/">Home</a> <br> <br>
-    <b>View {{ $location }} Tours</b> <br>
-    @if (count($view_tours_location) > 0)
-        @foreach ($view_tours_location as $tour_location)
-	        Title: <a href="/tour/{{ $tour_location->id }}">{{ $tour_location->title }}</a> <br>
-	        Description: {{ $tour_location->description }} <br>
-	        Location: {{ $tour_location->location }} <br> <br>
+    <b>View Tour</b> <br>
+    @if (count($view_tour) > 0)
+        @foreach ($view_tour as $tour_details)
+	        Title: {{ $tour_details->title }} <br>
+	        Description: {{ $tour_details->description }} <br>
+	        Location: {{ $tour_details->location }} <br> <br>
         @endforeach
     @else
-	    No Tours. <br><br>
+	    Tour doesn't exist. <br><br>
     @endif
     </body>
 </html>
