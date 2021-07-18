@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --purple: #7307c8;
+    --white: #fff;
+    --black: #000;
+    --lightgray: rgb(219, 219, 219);
+    --darkgray: rgb(51, 49, 49);
+    --teal: #09CCC0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+} 
+
+.menucontainer {
+  display: flex;
+  justify-content: center; 
+}
+
+.menu {
+  padding-top: 4vh;
+  width: 1200px;
+}
+
+.menu img {
+  width: 60%;
+  margin-top: -15px;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.right li {
+  padding-right: 25px;
+}
+
+.right {
+  float: right;
+}
+
+.right .purpbg {
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: bold;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 20px auto;
+}
+
+.confetti > img {
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;  
+}
+
+.mid-container {
+  margin-left: 140px;
+  margin-top: 40px;
+}
+
+#contact {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button{
+  border-radius: 5px;
+  border: none;
+  width:150px;
+  padding: 8px;
+  background-color: var(--purple);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-left: 550px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.prefooter{
+ display: flex;
+ flex-direction: row;
+ padding: 30px;
+ background-color: var(--darkgray);
+}
+
+.prefooter ul {
+ list-style-type: none;
+}
+
+.prefooter a {
+ color: var(--white);
+ text-decoration: none;
+}
+
+.footerlinks {
+ color: var(--white);
+ text-transform: uppercase;
+ font-weight: bold;
+ padding-right: 60px;
+}
+
+.footerleft {
+  margin-left: 60px;
+}
+
+.socialmediaicons {
+ display: inline-flex;
+ color: var(--teal);
+}
+
+.socialmediaicons li {
+ margin: 1rem 1.25rem 0 0;
+
+}
+
+.newsletter {
+ padding-left: 400px;
+}
+
+
+.newsletter h1 {
+ color: var(--white);
+ margin-bottom: 20px;
+}
+
+.newsletter input[type=email] {
+ border: none;
+ width: 240px;
+ height: 40px;
+ background: var(--white);
+ border-radius: .25rem;
+ padding: 0px 20px;
+ margin-top: 20px; 
+}
+
+.newslettercontainer {
+  margin-top: 10px;
+}
+
+#signup {
+  margin-left: 50px;
+}
+
+footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2rem 0;
+background-color: #09CCC0;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 5%;
+}
+
+
+
+/* footer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 2rem 0;
+ background-color: #09CCC0;
+ /* background-image: url("/assets/img/Main Top Image.png"); */
+ /* background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover; */
+}
+
+
+footer p {
+ font-weight: bold;
+ padding: 10vh 0;
+}
+
+footer > h2 {
+ padding-top: 1.5vh;
+ color: var(--white);
+} 
