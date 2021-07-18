@@ -15,7 +15,7 @@ class TravelType extends Model
 
     public function tours(){
 
-	return $this->hasMany('App\Tour');
+	    return $this->hasMany('App\Tour');
 	
     }
 }
