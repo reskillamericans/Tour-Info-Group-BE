@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookingController;
-use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +16,3 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/booking-success', [BookingController::class, 'bookingSuccess']);
 
-Route::get('/contact', [ContactController::class, 'Contact']);
