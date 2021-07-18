@@ -10,7 +10,6 @@ class ContactController extends Controller
 {
     public function Contact()
     {
-
         return view('contact');
     }
 }
