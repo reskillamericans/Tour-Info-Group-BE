@@ -10,7 +10,6 @@ class BookingController extends Controller
 {
     public function bookingSuccess()
     {
-
         return view('booking-success');
     }
 }
