@@ -40,6 +40,10 @@ INSTALLED_APPS = [
 
     #application created by Natiea Cannon
     'tourapp',
+
+    #signupendpoint created by Eleanor Davies
+    'signupendpoint',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
