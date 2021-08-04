@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TourController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
 
@@ -14,6 +15,10 @@ use App\Http\Controllers\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', [TourController::class, 'index']);
+
+Route::get('/results', [TourController::class, 'results']);
 
 Route::get('/booking-success', [BookingController::class, 'bookingSuccess']);
 
