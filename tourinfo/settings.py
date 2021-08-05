@@ -40,17 +40,12 @@ INSTALLED_APPS = [
 
     #application created by Natiea Cannon
     'tourapp',
-<<<<<<< HEAD
 
-    #signupendpoint created by Eleanor Davies
+
+    #signupendpoint & bookings created by Eleanor Davies
     'signupendpoint',
     'rest_framework',
-
-    #accounts created by Eleanor Davies (made for validation instead of Password per Femi)
-    'accounts',
-
-=======
->>>>>>> parent of 6302d02 (Version 1)
+    'bookings',
 ]
 
 MIDDLEWARE = [
