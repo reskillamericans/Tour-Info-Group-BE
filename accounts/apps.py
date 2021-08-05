@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class SignupendpointConfig(AppConfig):
+class AccountsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'signupendpoint'
+    name = 'accounts'

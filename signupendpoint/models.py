@@ -8,10 +8,11 @@ from django.db.models.fields import DateTimeField
 class User(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
-    email = models.EmailField()
-    # email = models.EmailField(unique=True)
+    # email = models.EmailField()
+    email = models.EmailField(unique=True)
     # Unique, no repeats of emails for different accounts
-    phone_number = models.CharField(max_length=255, unique=True) #Unique, no repeats of phone numbers for different accounts
+    phone_number = models.CharField(max_length=255, unique=True) 
+    #Unique, no repeats of phone numbers for different accounts
     created_at = models.DateTimeField(auto_now_add=True)
     # date/time to register when a user was created
     updated_at = models.DateTimeField(auto_now_add=True)

@@ -14,12 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     #signupendpoint created by Eleanor Davies
     path('signupendpoint/', include("signupendpoint.urls")),
     path('api-auth/', include('rest_framework.urls')),
+    # accounts to validate/userauth Eleanor Davies
+    path('accounts/', include("accounts.urls"))
+=======
+>>>>>>> parent of 6302d02 (Version 1)
 ]
