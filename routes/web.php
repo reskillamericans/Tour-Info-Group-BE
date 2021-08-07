@@ -30,3 +30,5 @@ Route::get('/signin', [UserController::class, 'signin']);
 Route::get('/booking-success', [BookingController::class, 'bookingSuccess']);
 
 Route::get('/contact', [ContactController::class, 'contact']);
+
+Route::post('/contact', [ContactController::class, 'send_email']);
