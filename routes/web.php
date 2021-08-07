@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
 
@@ -18,7 +19,13 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [TourController::class, 'index']);
 
+Route::get('/about-us', [TourController::class, 'about']);
+
+Route::get('/travel', [TourController::class, 'travel']);
+
 Route::get('/results', [TourController::class, 'results']);
+
+Route::get('/signin', [UserController::class, 'signin']);
 
 Route::get('/booking-success', [BookingController::class, 'bookingSuccess']);
 

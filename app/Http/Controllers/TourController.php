@@ -11,6 +11,16 @@ class TourController extends Controller
         return view('index');
     }
 
+    public function about()
+    {
+        return view('about-us');
+    }
+
+    public function travel()
+    {
+        return view('travel');
+    }
+
     public function results()
     {
         return view('results');
