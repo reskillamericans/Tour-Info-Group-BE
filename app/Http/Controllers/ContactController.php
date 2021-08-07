@@ -23,7 +23,7 @@ class ContactController extends Controller
         \Mail::send('mail', array(
             'name' => $request->get('name'),
             'email' => $request->get('email'),
-            'msg' => $request->get('phone'),
+            'msg' => $request->get('msg'),
         ), function($message) use ($request){
             $message->from($request->email);
             $message->to('', '')->subject('Contact');
