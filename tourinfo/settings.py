@@ -40,10 +40,15 @@ INSTALLED_APPS = [
 
     #application created by Natiea Cannon
     'tourapp',
+
+    # Bookings created by Eleanaor Davies
     'bookings',
 
     #app added by Natiea Cannon
-    'rest_framework'
+    'rest_framework',
+
+    #signupendpoint created by Eleanor Davies
+    'signupendpoint',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +60,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# Added for AbstractBaseUser - Eleanor Davies
+AUTH_USER_MODEL = 'signupendpoint.User'
+
 
 ROOT_URLCONF = 'tourinfo.urls'
 
@@ -80,17 +89,24 @@ WSGI_APPLICATION = 'tourinfo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'tour-info',
+#         'USER': 'pythontest',
+#         'HOST': '68.183.121.201',
+#         'PORT': 3306,
+#         'PASSWORD': 'pdai2@2o21SA',
+#     }
+# }
+
+# copy/Pasted per Femi- Eleanor
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tour-info',
-        'USER': 'pythontest',
-        'HOST': '68.183.121.201',
-        'PORT': 3306,
-        'PASSWORD': 'pdai2@2o21SA',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
