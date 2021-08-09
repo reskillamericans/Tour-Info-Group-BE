@@ -1,5 +1,3 @@
-# This file was created and the body is copied and pasted from Femi's example for AbstractBaseUser- imported into models.py. Edited to be what Eleanor thinks it should be for the signupendpoint
-
 from django.contrib.auth.base_user import BaseUserManager
 
 
