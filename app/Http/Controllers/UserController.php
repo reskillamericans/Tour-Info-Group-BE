@@ -10,4 +10,14 @@ class UserController extends Controller
     {
         return view('signin');
     }
+
+    public function signup()
+    {
+        return view('signup');
+    }
+
+    public function reset()
+    {
+        return view('reset');
+    }
 }

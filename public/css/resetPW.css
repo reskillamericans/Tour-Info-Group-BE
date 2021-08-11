@@ -168,7 +168,7 @@ footer {
  flex-direction: column;
  align-items: center;
  padding: 2rem 0;
- background-image: url("/assets/img/Main Top Image.png");
+ background-image: url("/img/Main Top Image.png");
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;

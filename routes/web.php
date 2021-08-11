@@ -27,6 +27,10 @@ Route::get('/results', [TourController::class, 'results']);
 
 Route::get('/signin', [UserController::class, 'signin']);
 
+Route::get('/signup', [UserController::class, 'signup']);
+
+Route::get('/reset', [UserController::class, 'reset']);
+
 Route::get('/booking-success', [BookingController::class, 'bookingSuccess']);
 
 Route::get('/contact', [ContactController::class, 'contact']);
