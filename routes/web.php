@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +17,22 @@ use App\Http\Controllers\TourController;
 |
 */
 
-Route::get('/', [TourController::class, 'view_all_tours']);
+Route::get('/', [TourController::class, 'index']);
 
-Route::get('/location/{location}', [TourController::class, 'view_tours_by_location']);
+Route::get('/about-us', [TourController::class, 'about']);
 
-Route::get('/search', [TourController::class, 'redirect_search_tour_by_location'])->name('search_location');
+Route::get('/travel', [TourController::class, 'travel']);
 
-Route::get('/search/{search_title}/{search_location}', [TourController::class, 'search_tour_by_location'])->name('search');
+Route::get('/results', [TourController::class, 'results']);
 
-Route::get('/tour/{id}', [TourController::class, 'view_tour']);
+Route::get('/signin', [UserController::class, 'signin']);
+
+Route::get('/signup', [UserController::class, 'signup']);
+
+Route::get('/reset', [UserController::class, 'reset']);
+
+Route::get('/booking-success', [BookingController::class, 'bookingSuccess']);
+
+Route::get('/contact', [ContactController::class, 'contact']);
+
+Route::post('/contact', [ContactController::class, 'send_email']);
