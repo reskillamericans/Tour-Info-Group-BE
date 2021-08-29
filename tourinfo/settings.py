@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     #app added by Natiea Cannon
     'rest_framework',
+    'drf_spectacular',
 
     #signupendpoint created by Eleanor Davies
     'signupendpoint',
@@ -92,6 +93,8 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_SCHEMA_CLASS': ('drf_spectacular.openapi.AutoSchema',
     ),
 }
 # Database
